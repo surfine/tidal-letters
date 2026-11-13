@@ -1,0 +1,11 @@
+{
+  "name": "tidal-letters",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tidal Letters (潮汐信笺): a browser reader for a personal blog's published JSON pack.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "python3 -m http.server 8080"
+  }
+}

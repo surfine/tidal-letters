@@ -1,0 +1,165 @@
+{
+  "posts": [
+    {
+      "id": "demo-paper",
+      "kind": "post",
+      "date": "2026-08-01",
+      "title": "High tide, blank paper",
+      "minutes": 2,
+      "tags": [
+        "tides",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-sections",
+      "kind": "post",
+      "date": "2026-06-15",
+      "title": "样本文章：阅读器分区一览",
+      "minutes": 3,
+      "tags": [
+        "reader",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-notes-rail",
+      "kind": "post",
+      "date": "2026-04-22",
+      "title": "Notes sit beside posts",
+      "minutes": 2,
+      "tags": [
+        "reader"
+      ]
+    },
+    {
+      "id": "demo-threads",
+      "kind": "post",
+      "date": "2026-01-09",
+      "title": "Threads tie posts together",
+      "minutes": 2,
+      "tags": [
+        "reader",
+        "letters"
+      ],
+      "series": "Opening the demo"
+    },
+    {
+      "id": "demo-scroll",
+      "kind": "post",
+      "date": "2024-09-03",
+      "title": "一封会滚动的长信",
+      "minutes": 6,
+      "tags": [
+        "letters",
+        "tides"
+      ]
+    },
+    {
+      "id": "demo-tags",
+      "kind": "post",
+      "date": "2024-05-18",
+      "title": "标签与归档如何运作",
+      "minutes": 2,
+      "tags": [
+        "reader",
+        "tides"
+      ],
+      "series": "Opening the demo"
+    },
+    {
+      "id": "demo-formats",
+      "kind": "post",
+      "date": "2024-02-14",
+      "title": "Format sample — every inline shape",
+      "minutes": 4,
+      "tags": [
+        "reader",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-search",
+      "kind": "post",
+      "date": "2022-11-20",
+      "title": "Searching the demo shelf",
+      "minutes": 2,
+      "tags": [
+        "reader"
+      ]
+    },
+    {
+      "id": "demo-tides",
+      "kind": "post",
+      "date": "2022-07-01",
+      "title": "潮水与信封",
+      "minutes": 2,
+      "tags": [
+        "tides",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-list",
+      "kind": "post",
+      "date": "2022-03-12",
+      "title": "How the list works",
+      "minutes": 2,
+      "tags": [
+        "reader",
+        "letters"
+      ],
+      "series": "Opening the demo"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-link",
+      "kind": "note",
+      "date": "2025-10-10",
+      "text": "Sample note with a link, so the note pane shows an external row.",
+      "link": "https://example.org/demo-note",
+      "host": "example.org"
+    },
+    {
+      "id": "note-rail",
+      "kind": "note",
+      "date": "2023-05-01",
+      "text": "Sample note: the Notes rail lists short scraps beside full posts."
+    }
+  ],
+  "tags": [
+    {
+      "slug": "letters",
+      "name": "letters",
+      "count": 7
+    },
+    {
+      "slug": "reader",
+      "name": "reader",
+      "count": 7
+    },
+    {
+      "slug": "tides",
+      "name": "tides",
+      "count": 4
+    }
+  ],
+  "series": [
+    {
+      "name": "Opening the demo",
+      "count": 3
+    }
+  ],
+  "best": [
+    {
+      "name": "Sample picks",
+      "postIds": [
+        "demo-formats",
+        "demo-scroll",
+        "demo-list"
+      ]
+    }
+  ],
+  "longs": []
+}

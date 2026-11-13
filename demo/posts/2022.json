@@ -1,0 +1,13 @@
+{
+  "posts": {
+    "demo-list": {
+      "html": "<p>This is a sample post. It exists so the All Posts list has something to show when the reader runs on its own page.</p>\n<p>Open the rail on the left, choose <strong>All Posts</strong>, and this row appears with its date, title and tags. Nothing here is a real letter; it only exercises the list.</p>\n"
+    },
+    "demo-search": {
+      "html": "<p>Type <code>shelf</code> or <code>demo</code> in the search field to find this sample.</p>\n<p>Search reads a small static index shipped with the demo. It is not a live query against a remote corpus; it only shows how the Search section filters titles, tags and body text.</p>\n"
+    },
+    "demo-tides": {
+      "html": "<p>退潮之后，沙滩上会留下一条湿痕，像一封没有署名的信。</p>\n<p>这是中性的填充文字：潮汐、信封、海边。它不对应任何真实地点或日期，只让示范包在列表里多一篇中文。</p>\n"
+    }
+  }
+}

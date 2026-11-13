@@ -1,0 +1,116 @@
+{
+  "entries": [
+    {
+      "id": "demo-formats",
+      "t": "Format sample — every inline shape",
+      "x": "This sample post contains every inline shape the reader’s article pane styles: paragraphs, links, emphasis, headings, lists, code, preformatted blocks, an image",
+      "b": "This sample post contains every inline shape the reader’s article pane styles: paragraphs, links, emphasis, headings, lists, code, preformatted blocks, an image, and a table. It is invented for the demo. A short link to example.org sits in a sentence with strong and emphasis . A blockquote looks like a cited margin note beside the tide line. Heading two Body under an h2. Heading three Body under an h3. Heading four Body under an h4. Unordered item one Unordered item two Ordered item one Ordered item two Inline code and a block: echo \"sample tide\" Column Value tide high letter blank",
+      "g": [
+        "reader",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-list",
+      "t": "How the list works",
+      "x": "This is a sample post. It exists so the All Posts list has something to show when the reader runs on its own page. Open the rail on the left, choose All Posts ,",
+      "b": "This is a sample post. It exists so the All Posts list has something to show when the reader runs on its own page. Open the rail on the left, choose All Posts , and this row appears with its date, title and tags. Nothing here is a real letter; it only exercises the list.",
+      "g": [
+        "reader",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-notes-rail",
+      "t": "Notes sit beside posts",
+      "x": "The Notes section lists short scraps that are not full posts. This sample post only points at that rail. Open Notes to see the two invented notes shipped with t",
+      "b": "The Notes section lists short scraps that are not full posts. This sample post only points at that rail. Open Notes to see the two invented notes shipped with the demo. They have dates and text, and one carries a link to example.org.",
+      "g": [
+        "reader"
+      ]
+    },
+    {
+      "id": "demo-paper",
+      "t": "High tide, blank paper",
+      "x": "High tide covers the blank paper for a moment; when it falls, the page is still blank. Neutral filler about tides and letters. No person, no real harbour, no bo",
+      "b": "High tide covers the blank paper for a moment; when it falls, the page is still blank. Neutral filler about tides and letters. No person, no real harbour, no borrowed wording from any live post.",
+      "g": [
+        "tides",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-scroll",
+      "t": "一封会滚动的长信",
+      "x": "这是示范包里故意写长的一篇，用来确认文章栏可以滚动。下面都是中性的潮汐与书信比喻，没有真实人物或地点。 清晨的水面像一张未写字的纸。浪很小的时候，岸边只听见细碎的声响，像有人翻信封却没有拆开。 午后潮位升高，脚印被一点点抹平。远处有一条船的影子，看不清旗号，也不必看清；示范文字不需要坐标。 傍晚退潮，湿沙上留下一条弧线",
+      "b": "这是示范包里故意写长的一篇，用来确认文章栏可以滚动。下面都是中性的潮汐与书信比喻，没有真实人物或地点。 清晨的水面像一张未写字的纸。浪很小的时候，岸边只听见细碎的声响，像有人翻信封却没有拆开。 午后潮位升高，脚印被一点点抹平。远处有一条船的影子，看不清旗号，也不必看清；示范文字不需要坐标。 傍晚退潮，湿沙上留下一条弧线。可以把那条线想成目录，把每一道波纹想成一段正文。 夜里风停了，灯塔的节奏变得清楚。它不指向任何真实港口，只给这篇样本文字一个稳定的节拍。 若你向下滚动，会继续读到同样语气的段落。目的只有一个：让阅读器的文章区出现足够的高度。 信封可以是空的。空并不表示缺少内容，只表示这封信属于示范，不属于任何收件人。 潮汐表可以虚构。高水位与低水位在这里只是段落的起伏，用来拉开版面。 再写一段关于沙与墨的比喻：沙子吸水，墨水在纸上晕开，两者都不对应真实事件。 再写一段关于邮戳的比喻：邮戳是一个圆，圆里没有日期，因为示范文章的日期写在元数据里，不写在故事里。 再写一段关于回信的比喻：回信可以永远不寄出。阅读器仍然能打开这篇，仍然能回到列表。 最后再添一段收束：滚动到这里，示范目的已经达到。返回列表，或换一篇较短的样本继续看分区。",
+      "g": [
+        "letters",
+        "tides"
+      ]
+    },
+    {
+      "id": "demo-search",
+      "t": "Searching the demo shelf",
+      "x": "Type shelf or demo in the search field to find this sample. Search reads a small static index shipped with the demo. It is not a live query against a remote cor",
+      "b": "Type shelf or demo in the search field to find this sample. Search reads a small static index shipped with the demo. It is not a live query against a remote corpus; it only shows how the Search section filters titles, tags and body text.",
+      "g": [
+        "reader"
+      ]
+    },
+    {
+      "id": "demo-sections",
+      "t": "样本文章：阅读器分区一览",
+      "x": "这篇样本把左侧分区再点名一次：精选、全部推送、笔记、标签、归档、线索、搜索。 精选来自示范包里的分组名单；其余分区由索引里的文章、笔记、标签与线索字段驱动。全部内容都是为公开仓库虚构的。",
+      "b": "这篇样本把左侧分区再点名一次：精选、全部推送、笔记、标签、归档、线索、搜索。 精选来自示范包里的分组名单；其余分区由索引里的文章、笔记、标签与线索字段驱动。全部内容都是为公开仓库虚构的。",
+      "g": [
+        "reader",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-tags",
+      "t": "标签与归档如何运作",
+      "x": "这是一篇样本文章，用来演示「标签」和「归档」分区。 点左侧的 标签 ，会看到本示范包里的几个标签名；再点 归档 ，按年份收拢。文中没有真实事件，只说明阅读器怎么分栏。",
+      "b": "这是一篇样本文章，用来演示「标签」和「归档」分区。 点左侧的 标签 ，会看到本示范包里的几个标签名；再点 归档 ，按年份收拢。文中没有真实事件，只说明阅读器怎么分栏。",
+      "g": [
+        "reader",
+        "tides"
+      ]
+    },
+    {
+      "id": "demo-threads",
+      "t": "Threads tie posts together",
+      "x": "This sample is the third post in the demo thread named Opening the demo . Choose Threads in the rail, open that thread name, and the three linked samples appear",
+      "b": "This sample is the third post in the demo thread named Opening the demo . Choose Threads in the rail, open that thread name, and the three linked samples appear together. The thread is invented for the demo; it is not a real series from a live site.",
+      "g": [
+        "reader",
+        "letters"
+      ]
+    },
+    {
+      "id": "demo-tides",
+      "t": "潮水与信封",
+      "x": "退潮之后，沙滩上会留下一条湿痕，像一封没有署名的信。 这是中性的填充文字：潮汐、信封、海边。它不对应任何真实地点或日期，只让示范包在列表里多一篇中文。",
+      "b": "退潮之后，沙滩上会留下一条湿痕，像一封没有署名的信。 这是中性的填充文字：潮汐、信封、海边。它不对应任何真实地点或日期，只让示范包在列表里多一篇中文。",
+      "g": [
+        "tides",
+        "letters"
+      ]
+    },
+    {
+      "id": "note-link",
+      "t": "Sample note with a link, so the note pane shows an external row.",
+      "x": "Sample note with a link, so the note pane shows an external row.",
+      "b": "Sample note with a link, so the note pane shows an external row.",
+      "g": []
+    },
+    {
+      "id": "note-rail",
+      "t": "Sample note: the Notes rail lists short scraps beside full posts.",
+      "x": "Sample note: the Notes rail lists short scraps beside full posts.",
+      "b": "Sample note: the Notes rail lists short scraps beside full posts.",
+      "g": []
+    }
+  ]
+}

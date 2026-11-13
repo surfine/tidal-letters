@@ -1,0 +1,13 @@
+{
+  "posts": {
+    "demo-formats": {
+      "html": "<p>This sample post contains every inline shape the reader’s article pane styles: paragraphs, links, emphasis, headings, lists, code, preformatted blocks, an image, and a table. It is invented for the demo.</p>\n<p>A short <a href=\"https://example.org/demo\">link to example.org</a> sits in a sentence with <strong>strong</strong> and <em>emphasis</em>.</p>\n<blockquote><p>A blockquote looks like a cited margin note beside the tide line.</p></blockquote>\n<h2>Heading two</h2>\n<p>Body under an h2.</p>\n<h3>Heading three</h3>\n<p>Body under an h3.</p>\n<h4>Heading four</h4>\n<p>Body under an h4.</p>\n<ul>\n<li>Unordered item one</li>\n<li>Unordered item two</li>\n</ul>\n<ol>\n<li>Ordered item one</li>\n<li>Ordered item two</li>\n</ol>\n<p>Inline <code>code</code> and a block:</p>\n<pre><code>echo \"sample tide\"\n</code></pre>\n<p><img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='48'%3E%3Crect width='120' height='48' fill='%23ddd'/%3E%3Ctext x='12' y='30' font-size='14'%3Esample%3C/text%3E%3C/svg%3E\" alt=\"sample placeholder\"></p>\n<table>\n<thead><tr><th>Column</th><th>Value</th></tr></thead>\n<tbody>\n<tr><td>tide</td><td>high</td></tr>\n<tr><td>letter</td><td>blank</td></tr>\n</tbody>\n</table>\n"
+    },
+    "demo-scroll": {
+      "html": "<p>这是示范包里故意写长的一篇，用来确认文章栏可以滚动。下面都是中性的潮汐与书信比喻，没有真实人物或地点。</p>\n<p>清晨的水面像一张未写字的纸。浪很小的时候，岸边只听见细碎的声响，像有人翻信封却没有拆开。</p>\n<p>午后潮位升高，脚印被一点点抹平。远处有一条船的影子，看不清旗号，也不必看清；示范文字不需要坐标。</p>\n<p>傍晚退潮，湿沙上留下一条弧线。可以把那条线想成目录，把每一道波纹想成一段正文。</p>\n<p>夜里风停了，灯塔的节奏变得清楚。它不指向任何真实港口，只给这篇样本文字一个稳定的节拍。</p>\n<p>若你向下滚动，会继续读到同样语气的段落。目的只有一个：让阅读器的文章区出现足够的高度。</p>\n<p>信封可以是空的。空并不表示缺少内容，只表示这封信属于示范，不属于任何收件人。</p>\n<p>潮汐表可以虚构。高水位与低水位在这里只是段落的起伏，用来拉开版面。</p>\n<p>再写一段关于沙与墨的比喻：沙子吸水，墨水在纸上晕开，两者都不对应真实事件。</p>\n<p>再写一段关于邮戳的比喻：邮戳是一个圆，圆里没有日期，因为示范文章的日期写在元数据里，不写在故事里。</p>\n<p>再写一段关于回信的比喻：回信可以永远不寄出。阅读器仍然能打开这篇，仍然能回到列表。</p>\n<p>最后再添一段收束：滚动到这里，示范目的已经达到。返回列表，或换一篇较短的样本继续看分区。</p>\n"
+    },
+    "demo-tags": {
+      "html": "<p>这是一篇样本文章，用来演示「标签」和「归档」分区。</p>\n<p>点左侧的<strong>标签</strong>，会看到本示范包里的几个标签名；再点<strong>归档</strong>，按年份收拢。文中没有真实事件，只说明阅读器怎么分栏。</p>\n"
+    }
+  }
+}

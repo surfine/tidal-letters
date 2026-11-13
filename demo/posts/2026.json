@@ -1,0 +1,16 @@
+{
+  "posts": {
+    "demo-notes-rail": {
+      "html": "<p>The Notes section lists short scraps that are not full posts. This sample post only points at that rail.</p>\n<p>Open <strong>Notes</strong> to see the two invented notes shipped with the demo. They have dates and text, and one carries a link to example.org.</p>\n"
+    },
+    "demo-paper": {
+      "html": "<p>High tide covers the blank paper for a moment; when it falls, the page is still blank.</p>\n<p>Neutral filler about tides and letters. No person, no real harbour, no borrowed wording from any live post.</p>\n"
+    },
+    "demo-sections": {
+      "html": "<p>这篇样本把左侧分区再点名一次：精选、全部推送、笔记、标签、归档、线索、搜索。</p>\n<p>精选来自示范包里的分组名单；其余分区由索引里的文章、笔记、标签与线索字段驱动。全部内容都是为公开仓库虚构的。</p>\n"
+    },
+    "demo-threads": {
+      "html": "<p>This sample is the third post in the demo thread named <em>Opening the demo</em>.</p>\n<p>Choose <strong>Threads</strong> in the rail, open that thread name, and the three linked samples appear together. The thread is invented for the demo; it is not a real series from a live site.</p>\n"
+    }
+  }
+}

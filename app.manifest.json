@@ -1,0 +1,146 @@
+{
+  "id": "tidal-letters",
+  "version": "1.0.0",
+  "protocol": 1,
+  "kit": ">=1 <2",
+  "windows": [
+    {
+      "window": "aaronBlog",
+      "app": "aaronBlog",
+      "entry": "reader/index.html",
+      "titleKey": "aaron_blog_label",
+      "windowClass": "aaron-blog-window openttd-window extracted-app-window",
+      "paneClass": "aaron-blog-pane openttd-pane",
+      "frameClass": "openttd-frame",
+      "size": {
+        "width": "980px",
+        "height": "clamp(360px, calc(100dvh - 102px), 700px)"
+      },
+      "capabilities": [
+        "state",
+        "snapshot",
+        "windows",
+        "intents"
+      ],
+      "menus": [
+        {
+          "id": "file",
+          "labelKey": "menu_file",
+          "items": [
+            {
+              "type": "item",
+              "action": "blog-sync",
+              "labelKey": "refresh",
+              "shortcutId": "blog-sync",
+              "conditionId": "blog-sync"
+            },
+            {
+              "type": "item",
+              "action": "close-active-window",
+              "labelKey": "close",
+              "shortcutId": "close-window",
+              "conditionId": "close-active-window"
+            }
+          ]
+        },
+        {
+          "id": "edit",
+          "labelKey": "menu_edit",
+          "items": [
+            {
+              "type": "item",
+              "action": "copy",
+              "labelKey": "copy",
+              "shortcutId": "copy",
+              "conditionId": "copy"
+            },
+            {
+              "type": "item",
+              "action": "select-all",
+              "labelKey": "select_all",
+              "shortcutId": "select-all",
+              "conditionId": "select-all"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "item",
+              "action": "blog-search",
+              "labelKey": "aaron_blog_search",
+              "shortcutId": "blog-search",
+              "conditionId": "blog-search"
+            }
+          ]
+        },
+        {
+          "id": "view",
+          "labelKey": "menu_view",
+          "items": [
+            {
+              "type": "item",
+              "action": "blog-section-best",
+              "labelKey": "aaron_blog_best",
+              "shortcutId": "",
+              "conditionId": "blog-section-best"
+            },
+            {
+              "type": "item",
+              "action": "blog-section-all",
+              "labelKey": "aaron_blog_all",
+              "shortcutId": "",
+              "conditionId": "blog-section-all"
+            },
+            {
+              "type": "item",
+              "action": "blog-section-notes",
+              "labelKey": "aaron_blog_notes",
+              "shortcutId": "",
+              "conditionId": "blog-section-notes"
+            },
+            {
+              "type": "item",
+              "action": "blog-section-tags",
+              "labelKey": "aaron_blog_tags",
+              "shortcutId": "",
+              "conditionId": "blog-section-tags"
+            },
+            {
+              "type": "item",
+              "action": "blog-section-archive",
+              "labelKey": "aaron_blog_archive",
+              "shortcutId": "",
+              "conditionId": "blog-section-archive"
+            },
+            {
+              "type": "item",
+              "action": "blog-section-threads",
+              "labelKey": "aaron_blog_threads",
+              "shortcutId": "",
+              "conditionId": "blog-section-threads"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "item",
+              "action": "blog-back",
+              "labelKey": "aaron_blog_back",
+              "shortcutId": "",
+              "conditionId": "blog-back"
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "hostMenu": "window"
+        }
+      ]
+    }
+  ],
+  "intents": [],
+  "strings": {
+    "en": {},
+    "zh": {}
+  }
+}
