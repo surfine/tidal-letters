@@ -4,6 +4,12 @@ A browser reader for a personal blog’s published JSON pack: posts, notes, tags
 archive, threads and search, with an offline cache of packs already downloaded.
 A host page can embed the same files in a frame.
 
+## Screenshots
+
+Captured running inside the AI System 6 desk: Classic on the left, Liquid Glass on the right.
+
+<p><img src="screenshots/aaronBlog-classic.png" width="49%" alt="Tidal Letters · Classic"> <img src="screenshots/aaronBlog-liquid-glass.png" width="49%" alt="Tidal Letters · Liquid Glass"></p>
+
 ## Run the demo
 
 ```bash

@@ -4,6 +4,12 @@
 标签、归档、线索浏览并搜索，并把已下载的内容包缓存在本机；也可由宿主页面
 嵌进窗口。
 
+## 截图
+
+在 AI System 6 桌面里实际运行时截取，左为 Classic，右为 Liquid Glass。
+
+<p><img src="screenshots/aaronBlog-classic.png" width="49%" alt="潮汐信笺 · Classic"> <img src="screenshots/aaronBlog-liquid-glass.png" width="49%" alt="潮汐信笺 · Liquid Glass"></p>
+
 ## 运行示范
 
 ```bash
