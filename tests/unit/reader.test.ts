@@ -101,6 +101,22 @@ describe("the reader", () => {
     expect(again.selectedKind.value).toBe("post");
   });
 
+  it("re-reads every chunk after the blog publishes a new content hash", async () => {
+    const page = pages();
+    page.setWindow();
+    const reader = new Reader(fakeBridge());
+    await reader.sync();
+    await reader.openPost("p1");
+    expect(reader.article.value).toMatchObject({ html: "<p>first body</p>" });
+
+    // The blog republishes: same ids, new text, new content hash.
+    page.pages.set("manifest", { contentHash: "hash-b" });
+    page.pages.set("chunk/2026", { posts: { p1: { html: "<p>revised body</p>" } } });
+    await reader.sync(true);
+    await reader.openPost("p1");
+    expect(reader.article.value).toMatchObject({ html: "<p>revised body</p>" });
+  });
+
   it("answers a reveal intent by opening the post and marking the paragraph", async () => {
     const reader = new Reader(fakeBridge());
     await reader.sync();

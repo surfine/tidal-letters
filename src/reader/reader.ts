@@ -7,7 +7,7 @@ import { computed, effect, signal } from "@preact/signals";
 import { askAssistant, pushMenuState, readState, writeState } from "../bridge/bridge.ts";
 import type { AskSource, BridgeClient, SuspendCause } from "../bridge/types.ts";
 import { asChunk, asIndex, asManifest, asSavedUi, asSearch, chunkHtml, isRecord } from "../data/guards.ts";
-import { cache, cached, fetchPack } from "../data/pack.ts";
+import { cache, cached, fetchPack, forgetContent } from "../data/pack.ts";
 import type { ChunkPack, Filter, IndexPack, Note, PackManifest, Post, SavedUi, SearchEntry } from "../data/types.ts";
 import { htmlLang, type Language, type StringKey, translate } from "../strings/index.ts";
 import { markCited } from "./cite.ts";
@@ -295,6 +295,7 @@ export class Reader {
         // Every chunk, the search index and the in-memory copy belong to the old pack.
         this.searchEntries.value = null;
         this.chunks.clear();
+        await forgetContent(this);
       }
       // Keep the blog's chunk index for SideAsk questions asked offline.
       const sha = manifest?.rag?.sha256;

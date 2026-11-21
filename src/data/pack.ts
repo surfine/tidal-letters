@@ -125,3 +125,31 @@ export async function fetchPack(source: PackSource, key: PackKey, { force = fals
   await cache(source, key, value);
   return value;
 }
+
+/**
+ * A new content hash means every chunk, the long-read pack and the search
+ * index describe the old posts. Their state entries and the memory copies go;
+ * the keys themselves keep their names and the next read fetches them again.
+ */
+export async function forgetContent(source: PackSource): Promise<void> {
+  FILE_CACHE.clear();
+  const stale = new Set(["pack:long", "pack:search"]);
+  try {
+    const { keys } = await source.client.call("state.keys", { prefix: "pack:" });
+    for (const key of keys) {
+      if (key.startsWith("pack:chunk/")) stale.add(key);
+    }
+  } catch {
+    // Without the list the memory copy is still dropped, and the keys the
+    // reader knows by name go with it.
+  }
+  await Promise.all(
+    [...stale].map(async (key) => {
+      try {
+        await source.client.call("state.remove", { key });
+      } catch {
+        // A key that is already gone is what was wanted.
+      }
+    }),
+  );
+}

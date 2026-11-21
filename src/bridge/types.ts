@@ -61,6 +61,8 @@ export interface AskSource {
 export interface BridgeCalls {
   "state.get": { params: { key: string }; result: { value: unknown } };
   "state.set": { params: { key: string; value: unknown }; result: Record<string, never> };
+  "state.remove": { params: { key: string }; result: Record<string, never> };
+  "state.keys": { params: { prefix?: string }; result: { keys: readonly string[] } };
   /** The desk's public gate: it shows its verification sheet and answers once the writer passed it. */
   "access.verify": { params: Record<string, never>; result: { verified?: boolean } };
   /** Hand the reader's subject to SideAsk; the host pairs the windows and prefills the quote. */
