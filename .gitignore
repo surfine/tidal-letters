@@ -1,3 +1,7 @@
 dist/
 node_modules/
 .DS_Store
+*.tsbuildinfo
+test-results/
+playwright-report/
+tools/out/

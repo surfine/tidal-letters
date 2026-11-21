@@ -1,11 +1,33 @@
 {
   "name": "tidal-letters",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
+  "type": "module",
   "description": "Tidal Letters (潮汐信笺): a browser reader for a personal blog's published JSON pack.",
   "license": "MIT",
   "scripts": {
-    "build": "node tools/build.mjs",
-    "start": "python3 -m http.server 8080"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "probe": "node tools/probe.mjs",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@preact/signals": "2.11.4",
+    "preact": "11.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.7",
+    "@playwright/test": "1.63.0",
+    "@preact/preset-vite": "2.10.6",
+    "@types/node": "^26.6.3",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
   }
 }

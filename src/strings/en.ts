@@ -1,0 +1,45 @@
+// Every string the reader draws inside its frame, in English. The window title
+// and the menus live in the manifest instead; the desk draws those.
+//
+// aaron_blog_label and refresh came from the desk's eager tables while the
+// reader was a desk module; the desk still reads them for the window title.
+
+export const en = {
+  aaron_blog_label: "潮汐信笺",
+  refresh: "Refresh",
+  aaron_blog_best: "Best",
+  aaron_blog_all: "All Posts",
+  aaron_blog_notes: "Notes",
+  aaron_blog_tags: "Tags",
+  aaron_blog_archive: "Archive",
+  aaron_blog_threads: "Threads",
+  aaron_blog_search: "Search",
+  aaron_blog_back: "Back",
+  aaron_blog_sections: "潮汐信笺 sections",
+  aaron_blog_syncing: "Syncing…",
+  aaron_blog_synced: "Synced",
+  aaron_blog_offline: "Offline · cached",
+  aaron_blog_items: "items",
+  aaron_blog_minutes: "min read",
+  aaron_blog_more: "Load more",
+  aaron_blog_clear: "Clear",
+  aaron_blog_loading: "Loading…",
+  aaron_blog_loading_detail: "The first sync is fetching the post index.",
+  aaron_blog_searching: "Searching…",
+  aaron_blog_empty: "Nothing here yet",
+  aaron_blog_offline_hint: "Connect to the blog and sync again.",
+  aaron_blog_welcome: "潮汐信笺",
+  aaron_blog_welcome_hint: "Choose a post from the list.",
+  aaron_blog_no_results: "No results",
+  aaron_blog_search_hint: "Type a title, tag or phrase.",
+  aaron_blog_search_placeholder: "Search titles, tags or text",
+  aaron_blog_original: "Original",
+  aaron_blog_note: "Note",
+  aaron_blog_unavailable: "Could not load this post",
+  aaron_blog_missing: "This post is not in the downloaded pack.",
+  aaron_blog_ask: "Ask in SideAsk",
+  aaron_blog_ask_post: "Ask about this post",
+  aaron_blog_whole: "Whole blog",
+  aaron_blog_on_site: "aaronlau.me",
+  aaron_blog_disk: "Demo disk",
+} as const;
