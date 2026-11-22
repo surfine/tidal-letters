@@ -90,6 +90,11 @@ module bundle. `demo/` is not part of the embed tree.
   the chunks and the search index it had cached (`pack:chunk/*`, `pack:long`,
   `pack:search`). A content change now retires them, so a sync shows the new
   text without a reload.
+- Fixed: Refresh on an unchanged blog no longer empties the downloaded posts;
+  only a new content hash retires them.
+- Fixed: going offline turns the footer's "Synced" into "Offline · cached"
+  again, as in 1.0.0.
+- Fixed: the reader no longer writes the desk's status line (1.0.0 never did).
 
 ## Licence
 
