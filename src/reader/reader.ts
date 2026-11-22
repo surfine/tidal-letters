@@ -282,7 +282,11 @@ export class Reader {
     try {
       const cachedManifest = asManifest(await cached(this, "manifest"));
       const manifest = asManifest(await fetchPack(this, "manifest", { force: true }));
-      const changed = force || !cachedManifest || !manifest || cachedManifest.contentHash !== manifest.contentHash;
+      // Only a new content hash makes the cached posts stale; a forced
+      // refresh re-reads the index but keeps what was downloaded.
+      const republished =
+        Boolean(manifest) && (!cachedManifest || cachedManifest.contentHash !== manifest?.contentHash);
+      const changed = force || !cachedManifest || !manifest || republished;
       let index = asIndex(await cached(this, "index"));
       if (changed || !index) index = asIndex(await fetchPack(this, "index", { force: changed }));
       if (manifest) await cache(this, "manifest", manifest);
@@ -291,7 +295,7 @@ export class Reader {
       this.online.value = navigator.onLine !== false;
       this.error.value = "";
       this.lastSynced.value = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-      if (changed) {
+      if (republished) {
         // Every chunk, the search index and the in-memory copy belong to the old pack.
         this.searchEntries.value = null;
         this.chunks.clear();

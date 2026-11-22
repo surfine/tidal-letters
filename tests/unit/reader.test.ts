@@ -117,6 +117,21 @@ describe("the reader", () => {
     expect(reader.article.value).toMatchObject({ html: "<p>revised body</p>" });
   });
 
+  it("keeps the downloaded posts when a refresh finds the same content hash", async () => {
+    const page = pages();
+    page.setWindow();
+    const reader = new Reader(fakeBridge());
+    await reader.sync();
+    await reader.openPost("p1");
+    expect(reader.article.value).toMatchObject({ html: "<p>first body</p>" });
+
+    // The writer presses Refresh; the blog has not changed. Then the pack goes away.
+    await reader.sync(true);
+    page.pages.delete("chunk/2026");
+    await reader.openPost("p1");
+    expect(reader.article.value).toMatchObject({ html: "<p>first body</p>" });
+  });
+
   it("answers a reveal intent by opening the post and marking the paragraph", async () => {
     const reader = new Reader(fakeBridge());
     await reader.sync();
