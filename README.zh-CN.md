@@ -7,6 +7,12 @@
 现在的实作是 TypeScript + Preact：数据模型、内容包的型别守卫与阅读器逻辑
 都有单元测试；浏览器测试跑真实页面，包含在搜索框里的中文输入法组合。
 
+## 截图
+
+在 AI System 6 桌面里实际运行时截取，左为 Classic，右为 Liquid Glass。
+
+<p><img src="screenshots/aaronBlog-classic.png" width="49%" alt="潮汐信笺 · Classic"> <img src="screenshots/aaronBlog-liquid-glass.png" width="49%" alt="潮汐信笺 · Liquid Glass"></p>
+
 ## 运行示范
 
 ```bash

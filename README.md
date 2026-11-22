@@ -8,6 +8,12 @@ The app is TypeScript + Preact. Its model, the pack guards and the reader’s ow
 logic are unit-tested; the browser specs drive the real page, including a
 Chinese composition in the search field.
 
+## Screenshots
+
+Captured running inside the AI System 6 desk: Classic on the left, Liquid Glass on the right.
+
+<p><img src="screenshots/aaronBlog-classic.png" width="49%" alt="Tidal Letters · Classic"> <img src="screenshots/aaronBlog-liquid-glass.png" width="49%" alt="Tidal Letters · Liquid Glass"></p>
+
 ## Run the demo
 
 ```bash
