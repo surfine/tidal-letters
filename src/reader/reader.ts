@@ -187,6 +187,16 @@ export class Reader {
   /** The saved selection, read once before the window is drawn. */
   async start(): Promise<void> {
     this.savedUi = asSavedUi(await readState(this.client, UI_STATE_KEY));
+    // The status line is the reader's only account of reachability: a cached
+    // read must not keep calling itself "Synced" after the desk goes offline.
+    const target = (globalThis as { window?: Partial<Pick<Window, "addEventListener">> }).window;
+    if (typeof target?.addEventListener === "function") {
+      const follow = () => {
+        this.online.value = navigator.onLine !== false;
+      };
+      target.addEventListener("online", follow);
+      target.addEventListener("offline", follow);
+    }
   }
 
   /** What the desk's menus show: every manifest command is always available. */

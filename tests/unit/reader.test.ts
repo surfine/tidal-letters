@@ -132,6 +132,26 @@ describe("the reader", () => {
     expect(reader.article.value).toMatchObject({ html: "<p>first body</p>" });
   });
 
+  it("stops calling itself synced when the desk goes offline", async () => {
+    const listeners = new Map<string, () => void>();
+    const win = (globalThis as unknown as { window: Record<string, unknown> }).window;
+    win.addEventListener = (type: string, listener: () => void) => listeners.set(type, listener);
+    const reader = new Reader(fakeBridge());
+    await reader.start();
+    await reader.sync();
+    expect(reader.online.value).toBe(true);
+    const onLine = Object.getOwnPropertyDescriptor(globalThis.navigator, "onLine");
+    Object.defineProperty(globalThis.navigator, "onLine", { value: false, configurable: true });
+    try {
+      listeners.get("offline")?.();
+      expect(reader.online.value).toBe(false);
+      expect(reader.syncLabel.value).toBe(reader.t("aaron_blog_offline"));
+    } finally {
+      if (onLine) Object.defineProperty(globalThis.navigator, "onLine", onLine);
+      else delete (globalThis.navigator as { onLine?: boolean }).onLine;
+    }
+  });
+
   it("answers a reveal intent by opening the post and marking the paragraph", async () => {
     const reader = new Reader(fakeBridge());
     await reader.sync();
