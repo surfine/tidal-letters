@@ -623,12 +623,10 @@ export class Reader {
 
   /** Connects the reader to the desk's events and menus; called once after the first paint. */
   attachToHost(): void {
-    // The desk's title bar and status line follow what the reader shows.
+    // The desk's title bar follows what the reader shows. The sync label stays
+    // in the window's own footer: v1.0.0 never wrote the desk's status line.
     effect(() => {
       this.client.setTitle(this.windowTitle.value);
-    });
-    effect(() => {
-      this.client.status({ text: this.syncLabel.value });
     });
     pushMenuState(this.client, this.menuState());
     this.client.enableSnapshots({ producer: "dom", target: document.getElementById("app") });

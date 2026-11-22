@@ -152,6 +152,28 @@ describe("the reader", () => {
     }
   });
 
+  it("names the window in the desk's title bar but leaves the desk's status line alone", async () => {
+    const client = fakeBridge();
+    const sent: string[] = [];
+    Object.assign(client, {
+      status: () => sent.push("status"),
+      setTitle: (title: string) => sent.push(`title:${title}`),
+    });
+    const g = globalThis as unknown as { document?: unknown };
+    const hadDocument = "document" in g;
+    if (!hadDocument) g.document = { getElementById: () => null };
+    try {
+      const reader = new Reader(client);
+      await reader.sync();
+      reader.attachToHost();
+      await reader.openPost("p1");
+      expect(sent).toContain("title:First");
+      expect(sent).not.toContain("status");
+    } finally {
+      if (!hadDocument) delete g.document;
+    }
+  });
+
   it("answers a reveal intent by opening the post and marking the paragraph", async () => {
     const reader = new Reader(fakeBridge());
     await reader.sync();
